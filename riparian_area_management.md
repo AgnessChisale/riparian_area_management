@@ -1,5 +1,7 @@
 # Project 8: Terrain Analysis and Riparian Area Management in the Nahmint Valley
 
+[Github Repo](https://github.com/AgnessChisale/riparian_area_management)
+
 ## Overview
 This project defines riparian reserve and management zones within a topographically complex forested watershed in the Nahmint Valley, British Columbia, using a high-resolution Digital Elevation Model (DEM). Stream networks were derived and characterized by order, gradient, and width. BC government stream classification guidelines were applied to assign buffer distances for Riparian Management Areas (RMAs), and watersheds were delineated to assess how forest harvesting runoff could impact stream networks.
 
@@ -34,7 +36,7 @@ This project defines riparian reserve and management zones within a topographica
 ## Methods
 The Nahmint DEM was preprocessed by filling sinks and computing flow direction and flow accumulation. A flow accumulation threshold was selected to define the stream network, which was then ordered using the Strahler method and converted to polyline features. Stream gradient was calculated per segment using elevation change and segment length from a zonal statistics workflow. Stream widths were measured manually from the satellite basemap for each stream order and averaged. BC stream classes (S2–S6) were assigned using Python expressions combining gradient and width thresholds, and reserve and management zone buffer distances were calculated accordingly. Watersheds were delineated using the flow direction and stream link rasters, and contour lines were generated to support terrain interpretation.
 
-📄 *For a detailed breakdown of the methodology, [click here](methodology.md)*
+📄 *For a detailed breakdown of the methodology, [click here](https://github.com/AgnessChisale/riparian_area_management/blob/main/methodology_project8.md)*
 
 ---
 
