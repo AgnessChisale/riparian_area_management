@@ -1,0 +1,5 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    - riparian_area_management.md
