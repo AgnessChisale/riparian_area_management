@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "riparian_area_management.html",
+    "href": "riparian_area_management.html",
+    "title": "Project 8: Terrain Analysis and Riparian Area Management in the Nahmint Valley",
+    "section": "",
+    "text": "Github Repo\n\n\nThis project defines riparian reserve and management zones within a topographically complex forested watershed in the Nahmint Valley, British Columbia, using a high-resolution Digital Elevation Model (DEM). Stream networks were derived and characterized by order, gradient, and width. BC government stream classification guidelines were applied to assign buffer distances for Riparian Management Areas (RMAs), and watersheds were delineated to assess how forest harvesting runoff could impact stream networks.\n\n\n\n\n\nDerive and classify a stream network from a DEM using hydrology tools\nExtract stream characteristics including gradient and width by stream order\nAssign BC stream classes and calculate riparian reserve and management zone buffers\nDelineate watershed catchments and generate contour lines\nEvaluate the adequacy of mapped RMAs for stream protection\n\n\n\n\n\nData | Layer | Description | Source | |——-|————-|——–| | nahmint_dem | High-resolution DEM of the Nahmint watershed, BC | UBC PostgreSQL Server (nahmint database) | | ArcGIS satellite basemap | Used for visual stream width measurement | ESRI |\nTools | Tool | Purpose | |——|———| | QGIS | Exporting the DEM from PostGIS to GeoTiff | | ArcGIS Pro (Spatial Analyst) | Hydrology analysis, reclassification, zonal statistics, buffering | | Python (ArcGIS Field Calculator) | Conditional field calculations for stream class and buffer distances |\n\n\n\n\nThe Nahmint DEM was preprocessed by filling sinks and computing flow direction and flow accumulation. A flow accumulation threshold was selected to define the stream network, which was then ordered using the Strahler method and converted to polyline features. Stream gradient was calculated per segment using elevation change and segment length from a zonal statistics workflow. Stream widths were measured manually from the satellite basemap for each stream order and averaged. BC stream classes (S2–S6) were assigned using Python expressions combining gradient and width thresholds, and reserve and management zone buffer distances were calculated accordingly. Watersheds were delineated using the flow direction and stream link rasters, and contour lines were generated to support terrain interpretation.\n📄 For a detailed breakdown of the methodology, click here\n\n\n\n\n\nriparian_management_map.pdf — Map showing watersheds, contour lines, stream network symbolized by stream class, an inset map of example RMAs, and text showing total reserve/management zone area and stream network length\nSummary statistics table of stream links, average length, width, and percent gradient grouped by stream order\n\n\n\n\n\n\nStream gradient and width increased with stream order, corresponding to broader and lower-gradient channels in higher-order streams\nRiparian reserve and management zones covered a significant portion of the study area, particularly around higher-order fish-bearing streams\nWatershed delineation highlighted areas where upslope harvesting activity could channel runoff directly into sensitive stream reaches\n\n\n\n\n\n\nPreprocessing a DEM by filling sinks for hydrological analysis\nDeriving flow direction, flow accumulation, and stream networks from a DEM\nClassifying streams using Strahler stream ordering\nExtracting stream gradient using zonal statistics and field calculations\nMeasuring and averaging stream width from a satellite basemap\nAssigning BC stream classes using Python conditional expressions in ArcGIS\nCalculating riparian reserve and management zone buffer distances\nDelineating watershed catchments using the Watershed tool\nGenerating contour lines for terrain visualization"
+  },
+  {
+    "objectID": "riparian_area_management.html#overview",
+    "href": "riparian_area_management.html#overview",
+    "title": "Project 8: Terrain Analysis and Riparian Area Management in the Nahmint Valley",
+    "section": "",
+    "text": "This project defines riparian reserve and management zones within a topographically complex forested watershed in the Nahmint Valley, British Columbia, using a high-resolution Digital Elevation Model (DEM). Stream networks were derived and characterized by order, gradient, and width. BC government stream classification guidelines were applied to assign buffer distances for Riparian Management Areas (RMAs), and watersheds were delineated to assess how forest harvesting runoff could impact stream networks."
+  },
+  {
+    "objectID": "riparian_area_management.html#objectives",
+    "href": "riparian_area_management.html#objectives",
+    "title": "Project 8: Terrain Analysis and Riparian Area Management in the Nahmint Valley",
+    "section": "",
+    "text": "Derive and classify a stream network from a DEM using hydrology tools\nExtract stream characteristics including gradient and width by stream order\nAssign BC stream classes and calculate riparian reserve and management zone buffers\nDelineate watershed catchments and generate contour lines\nEvaluate the adequacy of mapped RMAs for stream protection"
+  },
+  {
+    "objectID": "riparian_area_management.html#data-sources-tools",
+    "href": "riparian_area_management.html#data-sources-tools",
+    "title": "Project 8: Terrain Analysis and Riparian Area Management in the Nahmint Valley",
+    "section": "",
+    "text": "Data | Layer | Description | Source | |——-|————-|——–| | nahmint_dem | High-resolution DEM of the Nahmint watershed, BC | UBC PostgreSQL Server (nahmint database) | | ArcGIS satellite basemap | Used for visual stream width measurement | ESRI |\nTools | Tool | Purpose | |——|———| | QGIS | Exporting the DEM from PostGIS to GeoTiff | | ArcGIS Pro (Spatial Analyst) | Hydrology analysis, reclassification, zonal statistics, buffering | | Python (ArcGIS Field Calculator) | Conditional field calculations for stream class and buffer distances |"
+  },
+  {
+    "objectID": "riparian_area_management.html#methods",
+    "href": "riparian_area_management.html#methods",
+    "title": "Project 8: Terrain Analysis and Riparian Area Management in the Nahmint Valley",
+    "section": "",
+    "text": "The Nahmint DEM was preprocessed by filling sinks and computing flow direction and flow accumulation. A flow accumulation threshold was selected to define the stream network, which was then ordered using the Strahler method and converted to polyline features. Stream gradient was calculated per segment using elevation change and segment length from a zonal statistics workflow. Stream widths were measured manually from the satellite basemap for each stream order and averaged. BC stream classes (S2–S6) were assigned using Python expressions combining gradient and width thresholds, and reserve and management zone buffer distances were calculated accordingly. Watersheds were delineated using the flow direction and stream link rasters, and contour lines were generated to support terrain interpretation.\n📄 For a detailed breakdown of the methodology, click here"
+  },
+  {
+    "objectID": "riparian_area_management.html#outputs",
+    "href": "riparian_area_management.html#outputs",
+    "title": "Project 8: Terrain Analysis and Riparian Area Management in the Nahmint Valley",
+    "section": "",
+    "text": "riparian_management_map.pdf — Map showing watersheds, contour lines, stream network symbolized by stream class, an inset map of example RMAs, and text showing total reserve/management zone area and stream network length\nSummary statistics table of stream links, average length, width, and percent gradient grouped by stream order"
+  },
+  {
+    "objectID": "riparian_area_management.html#key-findings",
+    "href": "riparian_area_management.html#key-findings",
+    "title": "Project 8: Terrain Analysis and Riparian Area Management in the Nahmint Valley",
+    "section": "",
+    "text": "Stream gradient and width increased with stream order, corresponding to broader and lower-gradient channels in higher-order streams\nRiparian reserve and management zones covered a significant portion of the study area, particularly around higher-order fish-bearing streams\nWatershed delineation highlighted areas where upslope harvesting activity could channel runoff directly into sensitive stream reaches"
+  },
+  {
+    "objectID": "riparian_area_management.html#skills-learned",
+    "href": "riparian_area_management.html#skills-learned",
+    "title": "Project 8: Terrain Analysis and Riparian Area Management in the Nahmint Valley",
+    "section": "",
+    "text": "Preprocessing a DEM by filling sinks for hydrological analysis\nDeriving flow direction, flow accumulation, and stream networks from a DEM\nClassifying streams using Strahler stream ordering\nExtracting stream gradient using zonal statistics and field calculations\nMeasuring and averaging stream width from a satellite basemap\nAssigning BC stream classes using Python conditional expressions in ArcGIS\nCalculating riparian reserve and management zone buffer distances\nDelineating watershed catchments using the Watershed tool\nGenerating contour lines for terrain visualization"
+  }
+]
