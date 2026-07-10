@@ -52,7 +52,7 @@ The Nahmint DEM was preprocessed by filling sinks and computing flow direction a
 
 ---
 
-## Skills Learned
+## Techniques
 - Preprocessing a DEM by filling sinks for hydrological analysis
 - Deriving flow direction, flow accumulation, and stream networks from a DEM
 - Classifying streams using Strahler stream ordering
