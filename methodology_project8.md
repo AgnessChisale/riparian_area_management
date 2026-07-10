@@ -1,6 +1,6 @@
-# Methodology: Project 8 — Terrain Analysis and Riparian Area Management in the Nahmint Valley
+#  Terrain Analysis and Riparian Area Management in the Nahmint Valley
 
-This document contains the detailed step-by-step methodology followed in Project 8.
+Detailed step-by-step methodology 
 
 ---
 
