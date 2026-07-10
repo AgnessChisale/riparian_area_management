@@ -1,6 +1,4 @@
-# Project 8: Terrain Analysis and Riparian Area Management in the Nahmint Valley
-
-[Github Repo](https://github.com/AgnessChisale/riparian_area_management)
+# Terrain Analysis and Riparian Area Management in the Nahmint Valley
 
 ## Overview
 This project defines riparian reserve and management zones within a topographically complex forested watershed in the Nahmint Valley, British Columbia, using a high-resolution Digital Elevation Model (DEM). Stream networks were derived and characterized by order, gradient, and width. BC government stream classification guidelines were applied to assign buffer distances for Riparian Management Areas (RMAs), and watersheds were delineated to assess how forest harvesting runoff could impact stream networks.
